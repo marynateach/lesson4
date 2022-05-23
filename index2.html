@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var users = [
+            {
+                "isActive": true,
+                "balance": "20000",
+                "phone": "+1234",
+                "name": "Evgeniya"
+            },
+            {
+                "isActive": false,
+                "balance": "22660",
+                "phone": "+12345",
+                "name": "Alex"
+            },
+            {
+                "isActive": true,
+                "balance": "100", //100
+                "phone": "+12345678",
+                "name": "Olya"
+            },
+        ]
+
+        let arr = [];
+
+        for(let i = 0; i < users.length; i++) {
+            if(users[i].isActive == true && parseInt(users[i].balance) > 2000) {
+                arr.push(users[i].phone)
+            }
+        }
+
+        alert(arr);
+    </script>
+</body>
+</html>
